@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_contentLast"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.android.ilearnandroid.page_last">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarLast"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/containerLast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabPreviousLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/previous" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/TextHeaderLast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/header_text_pageLast"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/ImagePageLast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextHeaderLast"
+                android:adjustViewBounds="true"
+                android:src="@drawable/happy_learning"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/TextPageLast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ImagePageLast"
+                android:text="@string/pageLast_text"
+                android:textSize="50sp"
+                android:layout_marginTop="20dp"
+                android:textColor="#A4C639"
+                android:textStyle="bold"
+                />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

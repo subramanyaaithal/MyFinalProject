@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ILearnAndroid</string>
+    <string name="main_page_text" >Apps are awesome!Apps make phones "Smart" and through its benefits, has drastically transformed the functioning of the current generation. So why not develop an Android App of you own? The next few screens will tell you how to develop your own app (assuming you are a beginner like me :))</string>
+    <string name="header_text">"Do you want to develop your own Android APP?"</string>
+    <string name="header_text_page1">Do your ground work</string>
+    <string name="page1_text">Before you begin developing apps in Android it is good to learn Java and XML. \nAndroid applications are developed using the Java language. \nYou use XML to define the UI (Front End Design) and a few other things, but the logic of the app will be written in Java.</string>
+    <string name="header_text_page2">Keep the tools ready</string>
+    <string name="page2_text">Android is a popular platform, and there are many tools available to help you.Since Google makes Android, it is only fitting that they would also make an Integrated Development Environment (IDE) that allows people to develop apps for it and it is called Android Studio. It is very easy to use IDE even for a beginner like me.</string>
+    <string name="header_text_page3">Learn to search</string>
+    <string name="page3_text">As with any software development task, knowing where to find the information that you need is the most important skill to develop. Learning how to find the right answers to your questions quickly will smooth out the learning curve no end.\nYou can search in the official Android Developer documentation, to learn about any component. It has good amount of examples for each component.</string>
+    <string name="header_text_page4">Have a project</string>
+    <string name="page4_text">You could spend days, weeks, months ploughing through tutorials and achieve very little that is useful in the day to day.So have a project and set a terget to achieve.Find a problem that you can solve with an app, it doesn’t have to be new, but it should make you say “I made that”.</string>
+    <string name="header_text_page5">Take up a course in Udacity!</string>
+    <string name="page5_text">Udacity’s eight week online course is taught directly by Google engineers, so you are getting your info straight form the source. The nice thing here is that you\’ll learn quite a bit about the fundamentals of Android. It focusses on getting you to understand the platform\’s basics rather than make you a code drone. It has a preview course as well which is free.</string>
+    <string name="header_text_pageLast">Get Started</string>
+    <string name="pageLast_text">Happy Learning :)</string>
+</resources>
