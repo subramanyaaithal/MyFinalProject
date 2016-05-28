@@ -3,14 +3,15 @@ package com.example.android.ilearnandroid;
 /**
  * Created by subramanya.aithal on 27/05/16.
  */
-import android.app.Activity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class page2 extends Activity {
+public class ToolsActivity extends AppCompatActivity {
 
     ImageButton fabNext2;
     ImageButton fabPrevious2;
@@ -18,10 +19,13 @@ public class page2 extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.page2);
+        setContentView(R.layout.activity_tools); //Show contents of activity_tools.xml from layouts in resources
         addListenerOnButtonPrevious2();
         addListenerOnButtonNext2();
     }
+
+    //This method listens for any hits on the previous button on the activity and onclick, calls GroundworkActivity.class
+
     public void addListenerOnButtonPrevious2() {
 
         final Context context = this;
@@ -33,7 +37,7 @@ public class page2 extends Activity {
             @Override
             public void onClick(View arg0) {
 
-                Intent intent = new Intent(context, page1.class);
+                Intent intent = new Intent(context, GroundworkActivity.class);
                 startActivity(intent);
 
             }
@@ -41,6 +45,8 @@ public class page2 extends Activity {
         });
 
     }
+
+    //This method listens for any hits on the previous button on the activity and onclick, calls SearchActivity.class
 
     public void addListenerOnButtonNext2() {
 
@@ -53,7 +59,7 @@ public class page2 extends Activity {
             @Override
             public void onClick(View arg0) {
 
-                Intent intent = new Intent(context, page3.class);
+                Intent intent = new Intent(context, SearchActivity.class);
                 startActivity(intent);
 
             }

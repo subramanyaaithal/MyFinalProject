@@ -2,52 +2,38 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_content4"
+    android:id="@+id/main_content1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.android.ilearnandroid.page4">
-
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/appbar_padding_top"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar4"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
-
-        </android.support.v7.widget.Toolbar>
-
-    </android.support.design.widget.AppBarLayout>
+    tools:context=".GroundworkActivity">
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/container4"
+        android:id="@+id/container1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
+    <!--Floating Action Button for giving link to tools activity-->
+
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabNext4"
+        android:id="@+id/fabNext1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|right"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/next" />
+        android:src="@drawable/next"
+        app:backgroundTint="#80757575" />
 
+    <!--Floating Action Button for giving link to main activity-->
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabPrevious4"
+        android:id="@+id/fabPrevious1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|left"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/previous" />
+        android:src="@drawable/previous"
+        app:backgroundTint="#50757575" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -60,36 +46,38 @@
             android:layout_height="match_parent"
             android:background="#ffffff">
 
+            <!--TextView for displaying the title of activity-->
             <TextView
-                android:id="@+id/TextHeader4"
+                android:id="@+id/TextHeader1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-                android:text="@string/header_text_page4"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/header_text_page1"
+                android:textAlignment="gravity"
                 android:textSize="40sp"
                 android:textStyle="bold"
-                android:textAlignment="gravity"
-                android:gravity="center"
                 />
 
             <ImageView
-                android:id="@+id/ImagePage4"
+                android:id="@+id/ImagePage1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/TextHeader4"
-                android:adjustViewBounds="true"
-                android:src="@drawable/build_debug"
+                android:layout_below="@+id/TextHeader1"
                 android:layout_marginTop="20dp"
-                />
-
+                android:adjustViewBounds="true"
+                android:padding="16dp"
+                android:src="@drawable/java_xml" />
+            <!--TextView for displaying the contents of activity-->
             <TextView
-                android:id="@+id/TextPage4"
+                android:id="@+id/TextPage1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/ImagePage4"
-                android:text="@string/page4_text"
-                android:textSize="22sp"
+                android:layout_below="@id/ImagePage1"
                 android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:text="@string/page1_text"
+                android:textSize="22sp"
                 />
 
 

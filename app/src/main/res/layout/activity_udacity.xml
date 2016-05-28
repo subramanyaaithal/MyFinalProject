@@ -6,26 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.android.ilearnandroid.page2">
-
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/appbar_padding_top"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar5"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
-
-        </android.support.v7.widget.Toolbar>
-
-    </android.support.design.widget.AppBarLayout>
+    tools:context=".UdacityActivity">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/container5"
@@ -33,13 +14,18 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
+    <!--Floating Action Button for giving link to happy_learning activity-->
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabNext5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|right"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/next" />
+        android:src="@drawable/next"
+        app:backgroundTint="#80757575" />
+
+    <!--Floating Action Button for giving link to project activity-->
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabPrevious5"
@@ -47,7 +33,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center|left"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/previous" />
+        android:src="@drawable/previous"
+        app:backgroundTint="#80757575" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -60,37 +47,38 @@
             android:layout_height="match_parent"
             android:background="#ffffff">
 
+            <!--TextView for displaying the title of the activity-->
             <TextView
                 android:id="@+id/TextHeader5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-                android:text="@string/header_text_page5"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                android:textAlignment="gravity"
                 android:gravity="center"
-                />
+                android:padding="16dp"
+                android:text="@string/header_text_page5"
+                android:textAlignment="gravity"
+                android:textSize="40sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/ImagePage5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/TextHeader5"
-                android:adjustViewBounds="true"
-                android:src="@drawable/android_udacity"
                 android:layout_marginTop="20dp"
-                />
+                android:adjustViewBounds="true"
+                android:padding="16dp"
+                android:src="@drawable/android_udacity" />
 
+            <!--TextView for displaying the content of the activity-->
             <TextView
                 android:id="@+id/TextPage5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@id/ImagePage5"
-                android:text="@string/page5_text"
-                android:textSize="22sp"
                 android:layout_marginTop="20dp"
-                />
+                android:padding="16dp"
+                android:text="@string/page5_text"
+                android:textSize="22sp" />
 
 
         </RelativeLayout>
