@@ -2,14 +2,14 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_content5"
+    android:id="@+id/main_content_udacity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".UdacityActivity">
+    tools:context=".MainActivity">
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/container5"
+        android:id="@+id/containerUdacity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
@@ -17,7 +17,7 @@
     <!--Floating Action Button for giving link to happy_learning activity-->
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabNext5"
+        android:id="@+id/fabNextUdacity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|right"
@@ -28,7 +28,7 @@
     <!--Floating Action Button for giving link to project activity-->
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabPrevious5"
+        android:id="@+id/fabPreviousUdacity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|left"
@@ -49,9 +49,10 @@
 
             <!--TextView for displaying the title of the activity-->
             <TextView
-                android:id="@+id/TextHeader5"
+                android:id="@+id/HeaderUdacity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="@string/header_text_page5"
@@ -60,10 +61,10 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/ImagePage5"
+                android:id="@+id/ImageUdacity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/TextHeader5"
+                android:layout_below="@+id/HeaderUdacity"
                 android:layout_marginTop="20dp"
                 android:adjustViewBounds="true"
                 android:padding="16dp"
@@ -71,10 +72,10 @@
 
             <!--TextView for displaying the content of the activity-->
             <TextView
-                android:id="@+id/TextPage5"
+                android:id="@+id/TextUdacity"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/ImagePage5"
+                android:layout_below="@id/ImageUdacity"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
                 android:text="@string/page5_text"

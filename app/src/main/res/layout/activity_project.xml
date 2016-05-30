@@ -6,11 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ProjectActivity">
+    tools:context=".MainActivity">
 
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/container4"
+        android:id="@+id/containerProject"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
@@ -18,7 +18,7 @@
     <!--Floating Action Button for giving link to udacity activity-->
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabNext4"
+        android:id="@+id/fabNextProject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|right"
@@ -29,7 +29,7 @@
     <!--Floating Action Button for giving link to search activity-->
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabPrevious4"
+        android:id="@+id/fabPreviousProject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|left"
@@ -50,9 +50,10 @@
 
             <!--TextView for displaying the title of the activity-->
             <TextView
-                android:id="@+id/TextHeader4"
+                android:id="@+id/HeaderProject"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="@string/header_text_page4"
@@ -62,10 +63,10 @@
                 />
 
             <ImageView
-                android:id="@+id/ImagePage4"
+                android:id="@+id/ImageProject"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/TextHeader4"
+                android:layout_below="@+id/HeaderProject"
                 android:layout_marginTop="20dp"
                 android:adjustViewBounds="true"
                 android:padding="16dp"
@@ -74,10 +75,10 @@
 
             <!--TextView for displaying the content of the activity-->
             <TextView
-                android:id="@+id/TextPage4"
+                android:id="@+id/TextProject"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/ImagePage4"
+                android:layout_below="@id/ImageProject"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
                 android:text="@string/page4_text"

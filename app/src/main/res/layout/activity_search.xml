@@ -6,11 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".SearchActivity">
+    tools:context=".MainActivity">
 
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/container3"
+        android:id="@+id/containerSearch"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
@@ -18,7 +18,7 @@
     <!--Floating Action Button for giving link to project activity-->
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabNext3"
+        android:id="@+id/fabNextSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|right"
@@ -29,7 +29,7 @@
     <!--Floating Action Button for giving link to tools activity-->
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabPrevious3"
+        android:id="@+id/fabPreviousSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|left"
@@ -50,9 +50,10 @@
 
             <!--TextView for displaying the title of the activity-->
             <TextView
-                android:id="@+id/TextHeader3"
+                android:id="@+id/HeaderSearch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="@string/header_text_page3"
@@ -62,10 +63,10 @@
                 />
 
             <ImageView
-                android:id="@+id/ImagePage3"
+                android:id="@+id/ImageSearch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/TextHeader3"
+                android:layout_below="@+id/HeaderSearch"
                 android:layout_marginTop="20dp"
                 android:adjustViewBounds="true"
                 android:padding="16dp"
@@ -74,10 +75,10 @@
 
             <!--TextView for displaying the content of the activity-->
             <TextView
-                android:id="@+id/TextPage3"
+                android:id="@+id/TextSearch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/ImagePage3"
+                android:layout_below="@id/ImageSearch"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
                 android:text="@string/page3_text"

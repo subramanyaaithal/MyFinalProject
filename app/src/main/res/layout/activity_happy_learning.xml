@@ -6,11 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".HappyLearningActivity">
+    tools:context=".MainActivity">
 
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/containerLast"
+        android:id="@+id/containerHappyLearning"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
@@ -19,7 +19,7 @@
     <!--Floating Action Button for giving link to udacity activity-->
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabPreviousLast"
+        android:id="@+id/fabPreviousHappyLearning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|left"
@@ -40,10 +40,12 @@
 
             <!--TextView for displaying the title of the activity-->
             <TextView
-                android:id="@+id/TextHeaderLast"
+                android:id="@+id/TextHeaderHappyLearning"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
                 android:gravity="center"
+                android:padding="16dp"
                 android:text="@string/header_text_pageLast"
                 android:textAlignment="gravity"
                 android:textSize="40sp"
@@ -51,10 +53,10 @@
                 />
 
             <ImageView
-                android:id="@+id/ImagePageLast"
+                android:id="@+id/ImagePageHappyLearning"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/TextHeaderLast"
+                android:layout_below="@+id/TextHeaderHappyLearning"
                 android:layout_marginTop="20dp"
                 android:adjustViewBounds="true"
                 android:padding="16dp"
@@ -63,10 +65,10 @@
 
             <!--TextView for displaying the content of the activity-->
             <TextView
-                android:id="@+id/TextPageLast"
+                android:id="@+id/TextPageHappyLearning"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/ImagePageLast"
+                android:layout_below="@id/ImagePageHappyLearning"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
                 android:text="@string/pageLast_text"

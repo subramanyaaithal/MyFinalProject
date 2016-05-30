@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ILearnAndroid</string>
     <string name="main_page_text" >Apps are awesome!Apps make phones "Smart" and through its benefits, has drastically transformed the functioning of the current generation. So why not develop an Android App of you own? The next few screens will tell you how to develop your own app (assuming you are a beginner like me :))</string>
-    <string name="header_text">"Do you want to develop your own Android APP?"</string>
+    <string name="header_text_main">"Do you want to develop your own Android APP?"</string>
     <string name="header_text_page1">Do your ground work</string>
     <string name="page1_text">Before you begin developing apps in Android it is good to learn Java and XML. \nAndroid applications are developed using the Java language. \nYou use XML to define the UI (Front End Design) and a few other things, but the logic of the app will be written in Java.</string>
     <string name="header_text_page2">Keep the tools ready</string>

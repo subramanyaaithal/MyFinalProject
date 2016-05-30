@@ -2,16 +2,16 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_content2"
+    android:id="@+id/main_content_tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ToolsActivity">
+    tools:context=".MainActivity">
 
 
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/container2"
+        android:id="@+id/containerTools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
@@ -19,7 +19,7 @@
     <!--Floating Action Button for giving link to search activity-->
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabNext2"
+        android:id="@+id/fabNextTools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|right"
@@ -30,7 +30,7 @@
     <!--Floating Action Button for giving link to groundwork activity-->
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabPrevious2"
+        android:id="@+id/fabPreviousTools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|left"
@@ -51,9 +51,10 @@
 
             <!--TextView for displaying the title of the activity-->
             <TextView
-                android:id="@+id/TextHeader2"
+                android:id="@+id/HeaderTools"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="@string/header_text_page2"
@@ -63,10 +64,10 @@
                 />
 
             <ImageView
-                android:id="@+id/ImagePage2"
+                android:id="@+id/ImageTools"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/TextHeader2"
+                android:layout_below="@+id/HeaderTools"
                 android:layout_marginBottom="40dp"
                 android:layout_marginTop="40dp"
                 android:adjustViewBounds="true"
@@ -76,10 +77,10 @@
 
             <!--TextView for displaying the content of the activity-->
             <TextView
-                android:id="@+id/TextPage2"
+                android:id="@+id/TextTools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/ImagePage2"
+                android:layout_below="@id/ImageTools"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
                 android:text="@string/page2_text"

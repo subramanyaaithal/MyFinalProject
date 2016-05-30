@@ -9,7 +9,7 @@
     tools:context="com.example.android.ilearnandroid.MainActivity">
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/container"
+        android:id="@+id/containerMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
@@ -17,7 +17,7 @@
     <!--Floating Action Button for giving link to groundwork activity-->
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabNext"
+        android:id="@+id/fabNextMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|right"
@@ -40,21 +40,21 @@
 
             <!--TextView for displaying the title of the activity-->
             <TextView
-                android:id="@+id/TextHeader"
+                android:id="@+id/TextHeaderMain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="@string/header_text"
+                android:text="@string/header_text_main"
                 android:textAlignment="gravity"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/ImageLogo"
+                android:id="@+id/ImageLogoMain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/TextHeader"
+                android:layout_below="@+id/TextHeaderMain"
                 android:adjustViewBounds="true"
                 android:src="@drawable/android_logo" />
 
@@ -63,7 +63,7 @@
                 android:id="@+id/TextMainPage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/ImageLogo"
+                android:layout_below="@id/ImageLogoMain"
                 android:padding="16dp"
                 android:text="@string/main_page_text"
                 android:textSize="22sp" />

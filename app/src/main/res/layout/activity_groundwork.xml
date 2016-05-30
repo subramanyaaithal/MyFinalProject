@@ -2,14 +2,14 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_content1"
+    android:id="@+id/main_content_groundwork"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".GroundworkActivity">
+    tools:context=".MainActivity">
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/container1"
+        android:id="@+id/containerGroundwork"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
@@ -17,7 +17,7 @@
     <!--Floating Action Button for giving link to tools activity-->
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabNext1"
+        android:id="@+id/fabNextGroundwork"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|right"
@@ -27,7 +27,7 @@
 
     <!--Floating Action Button for giving link to main activity-->
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabPrevious1"
+        android:id="@+id/fabPreviousGroundwork"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|left"
@@ -48,9 +48,10 @@
 
             <!--TextView for displaying the title of activity-->
             <TextView
-                android:id="@+id/TextHeader1"
+                android:id="@+id/TextHeaderGroundwork"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="@string/header_text_page1"
@@ -60,20 +61,20 @@
                 />
 
             <ImageView
-                android:id="@+id/ImagePage1"
+                android:id="@+id/ImagePageGroundwork"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/TextHeader1"
+                android:layout_below="@+id/TextHeaderGroundwork"
                 android:layout_marginTop="20dp"
                 android:adjustViewBounds="true"
                 android:padding="16dp"
                 android:src="@drawable/java_xml" />
             <!--TextView for displaying the contents of activity-->
             <TextView
-                android:id="@+id/TextPage1"
+                android:id="@+id/TextPageGroundwork"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/ImagePage1"
+                android:layout_below="@id/ImagePageGroundwork"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
                 android:text="@string/page1_text"
