@@ -1,6 +1,6 @@
 #ILeanAndroid
 
-An App telling people who wants to learn android App Development.
+An App telling people about ways to learn android App Development.
 
 ##Technical Details
 
